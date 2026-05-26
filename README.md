@@ -1,6 +1,6 @@
-﻿# Lab 8 - Securite des applications mobiles
+# Lab 8 - Securite des applications mobiles
 
-Ce depot documente un travail d'analyse statique realise sur l'APK pedagogique **DIVA.apk** dans le cadre du Lab 8 de securite des applications mobiles. Les captures d'ecran presentes dans ce dossier retracent la preparation du perimetre, la collecte d'informations, l'utilisation de BeVigil et l'analyse de l'application avec Yaazhini.
+Ce depot documente un travail d'analyse statique realise sur l'APK pedagogique **DIVA.apk** dans le cadre du Lab 8 de securite des applications mobiles. Les captures d'ecran sont integrees directement dans ce README et retracent la preparation du perimetre, la collecte d'informations, l'utilisation de BeVigil et l'analyse de l'application avec Yaazhini.
 
 ## Objectif du lab
 
@@ -19,6 +19,8 @@ L'objectif est d'analyser la posture de securite et l'exposition d'une applicati
 Les captures montrent une demarche structuree : creation d'un perimetre d'analyse, calcul d'une empreinte SHA-256 de l'APK, recherche de l'application dans BeVigil, puis analyse statique dans Yaazhini. BeVigil ne retourne aucun resultat pour `DIVA.apk`, tandis que Yaazhini identifie plusieurs points de vigilance : communications non securisees, application debuggable, sauvegarde Android active, export incorrect de providers, JavaScript active dans une WebView et usage du stockage externe.
 
 Ces elements doivent etre consideres comme des constats de triage issus d'outils d'analyse statique. Ils servent a orienter la verification manuelle et la cartographie OWASP, mais ne constituent pas a eux seuls une preuve d'exploitation.
+
+Le depot Git ne versionne volontairement que ce README : les captures sont embarquees ci-dessous et aucun fichier PNG separe n'est necessaire dans le depot.
 
 ## Description complete des captures
 
